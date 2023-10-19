@@ -7,8 +7,31 @@ body{
 }
 
 #logo{
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
+    
+    font-size: 40px;
+    font-weight: 700;
     color:black;
+    font-family: 'Crimson Text', serif;
+    
 }
+
+
+
+
+
+@media only screen and (min-width:786px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
