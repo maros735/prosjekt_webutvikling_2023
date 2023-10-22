@@ -1,10 +1,33 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Crimson Text', serif;
+    
 }
+
+
 #grid-container {
     display:grid;
     grid-template-areas: "header" "main" "footer";
 }
+header, main, footer {
+    padding: 1rem;
+}
+ header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+ }
+
+ header nav {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+ }
+
+
 
 #logo{
     
@@ -12,7 +35,33 @@ body{
     font-weight: 700;
     color:black;
     font-family: 'Crimson Text', serif;
+    text-decoration: none;
     
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+
+}
+
+
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.default-flex h2 {
+    flex-basis: 100%;
+}
+
+.default-flex article{
+    flex-basis: 33%;
+    min-width: 300px;
+}
+.default-flex article img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -20,6 +69,17 @@ body{
 
 
 @media only screen and (min-width:786px) {
+    
+ .responsive{
+    padding:0px 20px;
+    
+ }
+ .responsive img{
+    width: 100%;
+    height: auto; 
+ }
+
+
 
 }
 
