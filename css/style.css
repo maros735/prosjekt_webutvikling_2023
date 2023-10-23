@@ -19,6 +19,7 @@ header, main, footer {
     font-size: 1.5rem;
     font-weight: 600;
     grid-area: header;
+    background-color: antiquewhite;
  }
 
  header nav {
@@ -26,7 +27,7 @@ header, main, footer {
     justify-content: space-between;
     position: relative;
  }
-
+ 
 
 
 #logo{
@@ -38,14 +39,101 @@ header, main, footer {
     text-decoration: none;
     
 }
-.img-fluid{
-    width: 100%;
-    height: auto;
+.navbar {
+    display: none;
 
+}
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a {
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+.Dame-btn {
+    display:inline-block;
+    padding: 0.5rem;
+    text-decoration:none;
+    background-color: black;
+    color: white;
+    border-radius: 1.5px;
+    font-weight: 700;
+    justify-content: center;
+    
+
+}
+.Mann-btn{
+    display:inline-block;
+    padding: 0.5rem;
+    text-decoration:none;
+    background-color: black;
+    color: white;
+    border-radius: 1.5px;
+    font-weight: 700;
+    justify-content: center;
+
+}
+.Barn-btn{
+    display:inline-block;
+    padding: 0.5rem;
+    text-decoration:none;
+    background-color: black;
+    color: white;
+    border-radius: 1.5px;
+    font-weight: 700;
+    justify-content: center;
+
+
+}
+main{
+    grid-area:main;
+}
+main section img{
+    width:100%;
+}
+
+footer{
+    grid-area:footer;
+}
+
+#Info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#efefef;
+    padding: 1rem;
+    justify-content: space-around;
+
+
+}
+#Info h2 {
+    width: 100;
+    text-align: center;
+    margin: 0;
+}
+
+#Info article {
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+    text-align: center;
 }
 
 
-.default-flex{
+
+
+.default-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -62,26 +150,53 @@ header, main, footer {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+    
+}
+#social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100vh;
+}
+#social-icons i{
+
+    display: inline-block;
+    padding: 1rem;
+    font-size: 24px;
+    margin: 0 15px 15px 0;
+   
+
 }
 
 
 
 
+@media only screen and (min-width:738px) {
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+   
 
-@media only screen and (min-width:786px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+     
+    #ham, .fa-cart-shopping {
+        display: none;
+
+    }
     
- .responsive{
-    padding:0px 20px;
-    
- }
- .responsive img{
-    width: 100%;
-    height: auto; 
- }
+
+ 
 
 
 
 }
+
 
 
 

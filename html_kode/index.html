@@ -3,62 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        
+         <link href="../css/font/css/fontawesome.css" rel="stylesheet">
+         <link href="../css/font/css/brands.css" rel="stylesheet">
+         <link href="../css/font/css/solid.css" rel="stylesheet">
+    
         <link href="../css/style.css" type="text/css" rel="stylesheet">
     <title>Skobutikk</title>
     </head>
     <body>
-        <header>
+        <div id="grid-container">
+         <header>
             <nav>
                 <a href="#" id="logo">SCARPA</a>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
 
                 <ul class="navbar">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Produkter</a></li>
-                    <li><a href="#">Om oss</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="om-oss.html">Om oss</a></li>
                 </ul>
             
             </nav>
+            
+           
 
-            <section>
-                <h1>Skobutikk</h1>
-            </section>
-
-        </header>
-        <div class="responsive">
-         
-         <img class="img-fluid" src="img/shoes-93756_1280(1).jpg" alt="sko">
-
-        </div>
-
-        <main>
+         </header>
+        
+          <main>
+            <h1>Skobutikk</h1>
             <section class="default-flex">
                 <h2>Hvem skal du kjøpe til?</h2>
                 <article>
                    <img src="img/istockphoto-938463764-612x612.jpg" alt="Dame med sko">
-                   <h3>Dame</h3>
+                   <h3><a href="products.html" class="Dame-btn">Dame</a></h3>
                 </article>
 
                 <article>
-                    <img src="img/istockphoto-1429977585-612x612.jpg" alt="menn med sko">
-                    <h3>Menn</h3>
+                    <img src="img/istockphoto-685168074-612x612.jpg" alt="menn med sko">
+                    <h3><a href="products.html" class="Mann-btn">Mann</a></h3>
                 </article>
 
                 <article>
-                    <img src="img/istockphoto-520219029-612x612.jpg" alt="barna med sko">
-                    <h3>Barn</h3>
+                    <img src="img/istockphoto-1327255247-612x612.jpg" alt="barna med sko">
+                    <h3><a href="products.html" class="Barn-btn">Barn</a></h3>
                 </article>
                     
                     
+            
+            </section>
+            <section id="Info">
+                <h2>SCARPA</h2>
+                <article>
+                    <h3>Vår Historie</h3>
                 
+                </article>
+                <article>
+                    <h3>Kjøpsvilkår</h3>
 
+                </article>
+                <article>
+                    <h3>Kunderservice</h3>
+                </article>
 
             </section>
 
             
             
-        </main>
-        <footer>
+         </main>
+         <footer>
+            <nav>
+                <ul id="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
 
-        </footer>
+                
+                </ul>
+            </nav>
+
+         </footer>
+        </div>
+        <script>
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } else{
+                    x.className = "navbar"
+                }
+            } )
+            
+
+
+
+        </script>
     </body>
 </html>
