@@ -42,7 +42,11 @@ header, main, footer {
 }
 .navbar {
     display: none;
+    
 
+}
+.navbar li a {
+    text-decoration: none;
 }
 .responsive {
     display: flex;
@@ -71,6 +75,7 @@ header, main, footer {
     border-radius: 1.5px;
     font-weight: 700;
     justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
     
 
 }
@@ -83,6 +88,7 @@ header, main, footer {
     border-radius: 1.5px;
     font-weight: 700;
     justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
 
 }
 .Barn-btn{
@@ -94,9 +100,18 @@ header, main, footer {
     border-radius: 1.5px;
     font-weight: 700;
     justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+
 
 
 }
+.Dame-btn:hover, .Mann-btn:hover, .Barn-btn:hover {
+    background-color: green;
+    color: #efefef;
+
+}
+
+
 main{
     grid-area:main;
 }
@@ -169,8 +184,75 @@ footer{
    
 
 }
+#ham {
+    font-size: 30px;
+    padding: 10px;
+}
+.fa-cart-shopping {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.om-oss{
+    padding: 2rem;
+    text-align: center;
+
+}
+.om-oss h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 
 
+}
+.om-oss p{
+    font-size:1.4rem;
+    line-height:1.5;
+}
+.team{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.team-member{
+    text-align: center;
+}
+.team-member img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+}
+.team-member h3{
+    font-size: 1.8rem;
+}
+.team-member p{
+    font-size: 1.2rem;
+    color:#666;
+
+}
+.cta{
+    margin-top: 2rem;
+}
+.explore-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: #efefef;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 1.5px;
+    transition: background-color 0.3s, color 0.3; 
+
+
+}
+.explore-btn:hover {
+    background-color: rgb(97, 43, 164);
+}
 
 
 @media only screen and (min-width:738px) {
