@@ -66,6 +66,7 @@ header, main, footer {
     padding: 1rem;
     text-decoration: none;
 }
+/* chatgpt hjelpet med å lage btn*/
 .Dame-btn {
     display:inline-block;
     padding: 0.5rem;
@@ -208,6 +209,7 @@ footer{
     font-size:1.4rem;
     line-height:1.5;
 }
+/* Ai hjlpet med å lage denne seksjonen av om-oss med bilde og btn*/
 .team{
     display:flex;
     justify-content: center;
