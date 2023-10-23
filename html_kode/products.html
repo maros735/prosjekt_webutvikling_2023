@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        
+        <link href="../css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="../css/font/css/brands.css" rel="stylesheet">
+        <link href="../css/font/css/solid.css" rel="stylesheet">
+   
+       <link href="../css/style.css" type="text/css" rel="stylesheet">
+       <link href="../css/shoe-style.css" type="text/css" rel="stylesheet">
+        <title>Product page</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#" id="logo">SCARPA</a>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="om-oss.html">Om oss</a></li>
+                </ul>
+            
+            </nav>
+        </header>
+        <div class="product-details">
+            <div class="product-images">
+                <img src="img/istockphoto-471916961-612x612.jpg"alt="Grønn sneaker shoe">
+            </div>
+            <div class="product-info">
+                <p class="Pris">500kr</p>
+                <p class="description">Beskrivelse:
+                    Grønn Snekear er laget  av de beste materialer som finnes 
+                    i markedet. Comfort og design er prorioritert..
+                </p>
+                <ul class="features">
+                    <li>-Overdel: canvas</li>
+                    <li>-Såle- gummi </li>
+                    <li>-Hælhøyde: 40mm</li>
+                    
+                </ul>
+                <button class="add-to-cart">LEGG TIL I HANDLEKURV</button>
+
+
+            </div>
+
+
+        </div>
+        <section id="Info">
+            <h2>SCARPA</h2>
+            <article>
+                <h3>Vår Historie</h3>
+            
+            </article>
+            <article>
+                <h3>Kjøpsvilkår</h3>
+
+            </article>
+            <article>
+                <h3>Kunderservice</h3>
+            </article>
+
+        </section>
+
+        <footer>
+            <nav>
+                <ul id="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+
+                
+                </ul>
+            </nav>
+
+         </footer>
+        </div>
+        <script>
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } else{
+                    x.className = "navbar"
+                }
+            } )
+            
+
+
+
+        </script>
+
+
+    </body>
+
+</html>
